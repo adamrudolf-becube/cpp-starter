@@ -1,0 +1,14 @@
+name: CIBuild
+
+on: [push]
+
+jobs:
+  ESLint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Run the unittests
+        run: bazel test --cxxopt=-std=c++14 --test_output=all //tests:hello_test
+      - run: echo "🍏 This job's status is ${{ job.status }}."
