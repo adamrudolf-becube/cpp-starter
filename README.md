@@ -2,6 +2,8 @@
 
 Starter repo for basic C++ projects
 
+![example workflow](https://github.com/adamrudolf-becube/cpp-starter/actions/workflows/CIBuild.yaml/badge.svg)
+
 ## Purpose and goal
 
 My goal is to have a project to practice my C++ and don't let dust settle on my knowledge. For that, I create a started repo, which has a build system and some basic functionality. Copying this repo I can start building simpler console applications.
